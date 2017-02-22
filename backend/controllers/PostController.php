@@ -51,6 +51,8 @@ class PostController extends Controller
      */
     public function actionView($id)
     {
+//        $res=Post::find()->where(['id'=>$id])->all();
+//        var_dump($res);die;
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
